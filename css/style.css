@@ -1,0 +1,223 @@
+:root {
+  --green: #3f9207;
+  --main: #66607c;
+  --content: #3d405b;
+  --book-item: #1E5F74;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: var(--main);
+}
+
+input,
+button {
+  font-size: 16px;
+}
+
+header {
+  top: 0;
+  position: sticky;
+  padding: 12px;
+  text-align: center;
+  background-color: var(--content);
+  color: white;
+}
+
+footer{
+  background-color: var(--content);
+  color: white;
+  text-align: center;
+  padding: 28px;
+}
+
+header h1 img {
+  width: 28px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: var(--content);
+}
+
+.input-section h1 {
+  text-align: center;
+  color: white;
+}
+
+form .input {
+  margin: 8px 0;
+}
+
+form button {
+  background-color: var(--green);
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.input-section form button span {
+  font-weight: bold;
+}
+
+.input-section form .input input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.input-section form .input label {
+  color: white;
+  font-weight: bold;
+}
+
+.input-section form .input-inline {
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.input-section form .input-inline label {
+  color: white;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.search-section {
+  background-color: var(--content);
+  margin: 16px 0;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.search-section h1 {
+  text-align: center;
+  color: white;
+}
+
+.search-section form {
+  padding: 16px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr 0.5fr;
+  grid-gap: 10px;
+}
+
+.search-section form label {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.search-section form input {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.search-section form button {
+  background-color: var(--green);
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book-shelf {
+  background-color: var(--content);
+  margin: 16px 0 0 0;
+  border: 1px solid black;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.book-shelf h1 {
+  text-align: center;
+  color: white;
+}
+
+.book-shelf .book-list {
+  padding: 16px;
+}
+
+.book-list .book-item {
+  background-color: var(--book-item);
+  padding: 8px 16px 16px 16px;
+  border: 1px solid #222831;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.book-item h2, .book-item p {
+  color: white;
+  margin: 8px 0;
+}
+
+.book-item .action button {
+  border: 0;
+  padding: 5px;
+  margin: 0 5px 0 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book-item .action .read-button {
+  background-color: var(--green);
+  color: white;
+}
+
+.book-item .action .delete-button {
+  background-color: darkred;
+  color: white;
+}
+
+.result-list{
+  background-color: var(--book-item);
+  padding: 8px 16px 16px 16px;
+  border: 1px solid #222831;
+  border-radius: 5px;
+  margin: 10px 0;
+  color: white;
+}
+
+.result-list p{
+  margin-bottom: 32px;
+}
+
+.result-item{
+  margin-top: 16px;
+}
+
+.result-item p{
+  margin: 4px 0;
+}
+
+p .incomplete{
+  background-color: var(--green);
+}
+p .complete{
+  background-color: darkred;
+}

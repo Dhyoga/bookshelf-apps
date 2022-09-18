@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/icon.ico">
+  <title>Bookshelf Apps</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1><img src="img/book-icon.png" alt="icon"> Bookshelf Apps</h1>
+  <p>Perpustakaan Berbasis Web Yang Lebih Terpercaya daripada Milik Pemerintah</p>
+</header>
+<main>
+  <section class="input-section">
+    <h1>Tambah Buku Baru</h1>
+    <form id="input-book">
+      <div class="input">
+        <label for="bookTitle">Judul</label>
+        <input id="book-title" type="text" required>
+      </div>
+      <div class="input">
+        <label for="bookAuthor">Penulis</label>
+        <input id="book-author" type="text" required>
+      </div>
+      <div class="input">
+        <label for="bookYear">Tahun</label>
+        <input id="book-year" type="number" required>
+      </div>
+      <div class="input-inline">
+        <label for="bookIsComplete">Selesai Baca</label>
+        <input id="book-is-complete" type="checkbox">
+      </div>
+      <button id="bookSubmit" type="submit">Tambahkan Buku</button>
+    </form>
+  </section>
+  
+  <section class="search-section">
+    <h1>Cari Buku</h1>
+    <form id="search-book">
+      <label for="keyword">Kata Kunci</label>
+      <input id="keyword" type="text">
+      <button id="searchSubmit" type="submit">Cari</button>
+    </form>
+
+    <div id="search-result"></div>
+  </section>
+  
+  <section class="book-shelf">
+    <h1>Daftar Bacaan</h1>
+    <div id="read-list" class="book-list"></div>
+  </section>
+  
+  <section class="book-shelf">
+    <h1>Riwayat Buku</h2>
+    <div id="history" class="book-list"> </div>
+  </section>
+</main>
+
+<footer>
+  <p>Created by Dhyoga | All Right Reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
